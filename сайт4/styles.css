@@ -1,0 +1,57 @@
+@import url('./css/_normalize.css');
+@import url('./css/_base.css');
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+}
+button{
+    height: 40px;
+    width: 250px;
+    background: #6B9361;
+    border: 3px solid #EEDEBA;
+    cursor: pointer;
+    background: #EEDEBA;
+    border-radius: 5px;
+    color: rgb(77, 71, 71)
+}
+button:hover{
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}
+/* 1 секция*/
+.container{
+    max-width: 100%;
+    height: auto;
+    background: #6B9361;
+    margin-top: -16px;
+    padding-bottom: 10px;
+}
+nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 100px;
+    text-align: center;
+    margin-right: 70px;
+}
+nav ul li{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+header h2{
+    color: white;
+    margin: 5px 450px 0px 0px;
+}
+/*2 секция*/
+
