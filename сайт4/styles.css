@@ -35,12 +35,14 @@ header h2{
 }
 /*2 секция*/
 main{
+    z-index: 1;
     position: relative;
     padding-top: 1px;
     padding-bottom: 150px;
     background: #EEDEBA;
 }
 main img{
+    z-index: -1;
     top: 200px;
     right: 620px;
 }
@@ -133,6 +135,7 @@ td:hover {
     overflow-x: hidden;
     box-shadow: 1px 1px 10px 5px gray;
     border-radius: 10px;
+    overflow-wrap: break-word;
 }
 .container1::-webkit-scrollbar{
     width: 10px;
@@ -142,69 +145,66 @@ td:hover {
     background: #6B9361;
     border-radius: 10px;
 }
-.container1 ul li{
-    list-style: none;
-    margin: 20px 0px;
-}
-.container--header{
+.container1 h2{
     display: flex;
-    transform: translateX(100px);
-    column-gap: 60px;
-    height: 50px;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    margin-top: 100px;
+    line-height: 250%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
 }
-.container--header1{
+.ul{
+    margin: 50px 0px 50px 0px;
+}
+.btn3{
+    font-size: 20px;
+    cursor: pointer;
     display: flex;
-    transform: translateX(80px);
-    column-gap: 20px;
-    height: 50px;
-}
-.container--header1 data{
-    transform: translate(-1px,24px);
-    font-size: 19px;
-    font-weight: 700;
-}
-.container--header1 button{
-    background: #EEDEBA;
-    height: 25px;
-    transform: translateY(21px);
-    cursor: pointer;
-    border: 0px;
-}
-.container--header button{
-    background: #EEDEBA;
-    height: 25px;
-    transform: translateY(21px);
-    cursor: pointer;
-    border: 0px;
-}
-.t{
-    height: 50px;
-    width: 400px;
-    border: 3px solid black;
+    flex-wrap: nowrap;
+    background: #6B9361;
+    border: none;
     border-radius: 10px;
+    padding: 15px;
+    color: white;
+    margin-left: 30px;
 }
-.check{
-    transform: translate(10px,10px);
-    position: relative;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border: 2px solid black;
-    border-radius: 25px;
+.btn3:hover{
+    transform: scale(1.1);
+    transition: ease 500ms;
 }
-.check::after{
-    content: url('./images/круг.png');
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    top: -5px;
-    left: -5px;
-    overflow: hidden;
+.li{
+    list-style: none;
+    width: 70%;
+    height: auto;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 1px;
 }
-.check:checked::after{
-    width: 30px;
-    height: 30px;
+.li button{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100px;
+    background: #6B9361;
+    color: white;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: -30px 0px 30px 350px;
 }
+li button:hover{
+    transform: scale(1.1);
+    transition: ease 500ms;
+}
+.p{
+    font-size: 20px;
+    margin: 30px 0px 30px 20px;
+}
+
 /* 4 секция */
 footer{
     background: #6B9361;
@@ -247,4 +247,74 @@ footer span p{
 }
 .container3 ul li img{
     margin: 0px 50px;
+}
+
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте */
+    z-index: 1; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включает прокрутку, если необходимо */
+    background-color: rgb(0,0,0); /* Черный фон с прозрачностью */
+    background-color: rgba(0,0,0,0.4); /* Черный фон с прозрачностью */
+}
+
+.modal-content {
+    height: 200px;
+    background-color: #6B9361;
+    margin: 15% auto; /* 15% сверху и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Ширина */
+    border-radius: 20px;
+}
+.modal-content h2{
+    display: block;
+    width: 50%;
+    color: white;
+    margin-left: 200px;
+    text-shadow: 1px 1px 5px black;
+    font-size: 25px;
+}
+.modal-content input{
+    margin-left: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+}
+.modal-content input:focus{
+    outline: none;
+}
+.modal-content button{
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ECD4B3;
+    color: #000000;
+    border: none;
+}
+.modal-content button:hover{
+    transform: scale(1.1);
+    transition: ease 500ms;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
