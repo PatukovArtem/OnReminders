@@ -45,35 +45,7 @@
             </table>
             </div>
             <div class="container1">
-                <div class="container--header">
-                    <button class="btn3" id="prevMonth">◀</button>
-                    <h2>Январь</h2>
-                    <button class="btn4" id="nextMonth">▶</button>
-                </div>
-                <div class="container--header1">
-                    <button class="btn3" id="prevDay">◀</button>
-                    <h2>Понедельник</h2>
-                    <data value="01.01">01.01</data>
-                    <button class="btn4" id="nextDay">▶</button>
-                </div>
-                    <ul>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                        <li><label><input class="t" type="text" placeholder="добавьте напоминание"></input><input class="check" type="checkbox"></input></label></li>
-                  </ul>
-            </div>
+               <h2 class="h">Для того чтобы создать напоминания, кликние по нужному числу календаря и создайте свое напоминание</h2>
         </div>
     </main>
     <!--Конец основной секции-->
@@ -86,29 +58,38 @@
             <div class="container3">
                 <p>Максим</p>
                 <ul>
-                    <li><a href=""><img src="/images/Telegram_black 2.png" alt=""></a></li>
-                    <li><a href=""><img src="/images/VK_black 2.png" alt=""></a></li>
-                    <li><a href=""><img src="/images/YouTube.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/Telegram_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/VK_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/YouTube.png" alt=""></a></li>
                 </ul>
             </div>
             <div class="container3">
                 <p>Артем</p>
                 <ul>
-                    <li><a href=""><img src="/images/Telegram_black 2.png" alt=""></a></li>
-                    <li><a href=""><img src="/images/VK_black 2.png" alt=""></a></li>
-                    <li><a href=""><img src="/images/YouTube.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/Telegram_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/VK_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/YouTube.png" alt=""></a></li>
                 </ul>
             </div>
             <div class="container3">
                 <p>Кирилл</p>
                 <ul>
-                    <li><a href=""><img src="/images/Telegram_black 2.png" alt=""></a></li>
-                    <li><a href=""><img src="/images/VK_black 2.png" alt=""></a></li>
-                    <li><a href=""><img src="/images/YouTube.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/Telegram_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/VK_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/YouTube.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <!-- модальное окно -->
+    <div id="reminderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить напоминание</h2>
+            <input type="text" id="newReminderInput" placeholder="Введите новое напоминание" required>
+            <button id="saveReminderButton">Сохранить</button>
+        </div>
+    </div>
     <script src="/js/cod.js"></script>
 </body>
 </html>
