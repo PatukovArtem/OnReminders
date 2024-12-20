@@ -33,22 +33,35 @@
         margin: 0px !important;
         max-width: 100% !important;
     }
-    .container--header{
-        transform: translateX(40px) !important;
+    .p{
+        font-size: 17px !important;
     }
-    .container--header1{
-        transform: translateX(20px) !important;
+    .btn3{
+        font-size: 17px !important;
     }
-    .container1 ul li{
-        width: 250px;
+    .li{
+        font-size: 18px !important;
     }
-    .container1 ul li label input{
-        width: 100%;
+    .li button{
+        margin-left: 210px !important;
+        width: 70px !important;
+        font-size: 15px !important;
     }
-    .check{
-        width: 25px !important;
-        top: -50px !important;
-        right: -250px;
+    .modal-content{
+        transform: translate(-90px,320px);
+        width: 300px !important;
+    }
+    .modal-content h2{
+        font-size: 20px !important;
+        margin-left: 0px !important;
+        width: 300px !important;
+    }
+    .modal-content input{
+        margin-left: 10px !important;
+        padding: 10px !important;
+    }
+    .modal-content button{
+        margin: 20px 0px 0px 70px !important;
     }
     footer h4{
         margin-left: -150px;
