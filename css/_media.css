@@ -1,0 +1,94 @@
+@media (max-width: 430px){
+    header h2{
+        font-size: 25px !important;
+        margin-left: 10px !important;
+    }
+    main img{
+        display: none;
+    }
+    main span h2{
+        transform: translate(80px,15px) !important;
+        font-size: 25px !important;
+    }
+    .h2{
+        transform: translate(-170px, 550px) !important;
+    }
+    .hero{
+        grid-template-columns: repeat(1,350px) !important;
+        row-gap: 150px;
+        padding-left: 10px;
+    }
+    .calendar{
+        height: auto !important;
+        max-width: 100% !important;
+        margin-left: 0px !important;
+    }
+    .btn1{
+        transform: translate(35px,-5px) !important;
+    }
+    .btn2{
+        transform: translate(-35px,-5px) !important;
+    }
+    .container1{
+        margin: 0px !important;
+        max-width: 100% !important;
+    }
+    .p{
+        font-size: 17px !important;
+    }
+    .btn3{
+        font-size: 17px !important;
+    }
+    .li{
+        font-size: 18px !important;
+    }
+    .li button{
+        margin-left: 210px !important;
+        width: 70px !important;
+        font-size: 15px !important;
+    }
+    .modal-content{
+        transform: translate(-90px,320px);
+        width: 300px !important;
+    }
+    .modal-content h2{
+        font-size: 20px !important;
+        margin-left: 0px !important;
+        width: 300px !important;
+    }
+    .modal-content input{
+        margin-left: 10px !important;
+        padding: 10px !important;
+    }
+    .modal-content button{
+        margin: 20px 0px 0px 70px !important;
+    }
+    footer h4{
+        margin-left: -150px;
+        font-size: 25px !important;
+    }
+    footer span p{
+        margin-left: -150px;
+        font-size: 20px !important;
+    }
+    .ft{
+        grid-template-columns: repeat(2,170px) !important;
+        row-gap: 20px;
+        margin-left: 0px !important;
+    }
+    .container3{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .container3 p{
+        font-size: 17px !important;
+    }
+    .container3 ul{
+        margin-left: -80px !important;
+    }
+    .container3 ul li img{
+        width: 40px;
+        height: auto;
+        margin: 0px 0px !important;
+    }
+}

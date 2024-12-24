@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Напоминалка</title>
+</head>
+<body>
+    <!--голова-->
+    <header>
+        <div class="container">
+            <h2>Напоминалка</h2>
+        </div>
+    </header>
+    <!--конец головы-->
+
+    <!--Основная секция-->
+    <main>
+        <span><h2>Календарные Дни</h2></span>
+        <span><h2 class="h2">Напоминания</h2></span>
+        <img src="/images/провод-Photoroom (1).png" alt="">
+        <div class="hero">
+            <div class="calendar">
+                <div class="calendar-header">
+                <button class="btn1" id="prevMonth">◀</button>
+                <h2 id="monthName">Январь</h2>
+                <button class="btn2" id="nextMonth">▶</button>
+                </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                        <th>Вс</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody">
+                    <!-- Дни будут добавлены с помощью JavaScript -->
+                </tbody>
+            </table>
+            </div>
+            <div class="container1">
+                <h2 class="h">Для того чтобы создать напоминания, кликние по нужному числу календаря и создайте свое напоминание</h2>
+            </div>
+        </div>
+    </main>
+    <!--Конец основной секции-->
+
+    <!--Подвал-->
+    <footer>
+        <h4>Напоминалка</h4>
+        <span><p>О нас</p></span>
+        <div class="ft">
+            <div class="container3">
+                <p>Максим</p>
+                <ul>
+                    <li><a href="https://t.me/collector100120"><img src="/images/Telegram_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/VK_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/YouTube.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="container3">
+                <p>Артем</p>
+                <ul>
+                    <li><a href="https://t.me/collector100120"><img src="/images/Telegram_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/VK_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/YouTube.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="container3">
+                <p>Кирилл</p>
+                <ul>
+                    <li><a href="https://t.me/collector100120"><img src="/images/Telegram_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/VK_black 2.png" alt=""></a></li>
+                    <li><a href="https://t.me/collector100120"><img src="/images/YouTube.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Модальное окно-->
+    <div id="reminderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить напоминание</h2>
+                <input type="text" id="newReminderInput" placeholder="Введите новое напоминание">
+                <button id="saveReminderButton">Сохранить</button>
+        </div>
+    </div>
+    <script src="/js/cod.js"></script>
+</body>
+</html>
